@@ -1,0 +1,132 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/*--------------FIN DE IGNORA LOS ESTILOS DEL TOGGLE-------------*/
+
+
+/*SECCION DE LA VENTANA TOGGLE
+fondo y color del texto en el CONTENIDO del toggle*/
+
+body {
+  background: #00000056;
+  color: white;
+  font-family: "Roboto";
+  text-decoration: none; }
+  
+/* a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; } */
+ 
+.wrap {
+  width: 50%; /* extension horizontal que abarcara el texto dentro del contenedor */
+  max-width: 1000px;
+  margin: auto; }
+ 
+.main {
+  width: 100%;
+  min-height: 200px; /* tamaño de la nueva ventana (slide) que aparecera*/ }
+ 
+.seccionToggle {
+  /*display: none;    que aparezca de inicio el contenido*/
+  height: calc(100vh - 50px);/*para la ubicación de la barra infeior*/
+  padding: 0px 0; /*ESTE ERA EL QUE OCASIONABA EL ESPACIO DE SEPARACION AL INICIO DE LA IMAGEN*/
+  text-align: center; }
+ 
+  /*EL BOTON DE BARRA HORIZONTAL DEL TOGGLE */
+.btn-toggle {
+
+  width:100%; /*longitud de la barra*/
+  height: 50px; /*tamaño vertical de la barra*/
+  line-height: 50px; /*alineacion vertical del texto*/
+  font-size: 24px; 
+  font-weight: bold;
+  color: rgb(68, 67, 67);
+  display: block;
+  background: rgb(252, 246, 160);
+  text-align: center;
+  text-decoration: none; }
+
+  .btn-toggle:hover {
+    text-decoration: none; }
+ 
+@media screen and (max-width: 500px) {
+  .seccionToggle h2 {
+    margin-top: 0; } }
+@media screen and (max-height: 550px) {
+  .seccionToggle h2 {
+    font-size: 40px;
+    margin-top: 0; } }
+
+/*--------------FIN DE IGNORA LOS ESTILOS DEL TOGGLE-------------*/
+
+
+.menu-1{
+	height: 60px;
+	background: #444;
+}
+.slider-1, .slider-2, .slider-3, .slider-4{
+	height: 100vh;
+	text-align: center;
+}
+.slider-1{
+	background: #700961;
+}
+.slider-2{
+	background: #b80d57;
+}
+.slider-3{
+	background: #e03e36;
+}
+.slider-4{
+	background: #ff7c38;
+}
+.footer{
+	background: #444;
+	color:#fff;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+/*BOTONES ANCLA ESTILOS*/
+    .btn_circle{
+      /*TAMAÑO
+       width: 25px;
+      height: 25px;  */
+      padding: 8px;
+      
+      /*para un solo color*/
+          /* background-color: #9ed1eb; */
+        
+        /*para degradado lineal*/
+          /*SE AGREGAN TODOS PARA COMPATIBILIDAD*/
+      
+      
+      /*BORDE DEL BOTON 100=CIRCULO*/
+      border-radius: 100%;
+      /*grosor y color del borde*/
+      border: 3px solid #ffffff;
+      background: -webkit-linear-gradient(rgb(252, 162, 179), rgb(209, 88, 112));
+      background: -moz-linear-gradient(rgb(252, 162, 179), rgb(206, 62, 90));
+      background: -o-linear-gradient(rgb(252, 162, 179), rgb(206, 62, 90));
+      background: linear-gradient(rgb(252, 162, 179), rgb(206, 62, 90));
+      /*SOMBRA: desplazamiento horizontal, vertical, valor del difuminado, color de la sombra*/
+      box-shadow: 6px 6px 29px rgb(39, 39, 39);
+    }
+    .btn_circle:hover{
+      /* background-color: #555454; */
+      background: -webkit-linear-gradient(rgb(250, 100, 127), rgb(37, 27, 29));
+      background: -moz-linear-gradient(rgb(250, 100, 127), rgb(37, 27, 29));
+      background: -o-linear-gradient(rgb(250, 100, 127), rgb(37, 27, 29));
+      background: linear-gradient(rgb(250, 100, 127), rgb(37, 27, 29));
+      box-shadow: 4px 4px 29px rgb(39, 39, 39);
+    }
+    /*FALTA EL ESTADO ON CLICK*/

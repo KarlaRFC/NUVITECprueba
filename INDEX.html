@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!--para que se muestre en dispositivos moviles y otros navegadores-->
+    <meta name="viewport" 
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NUVITEC</title>
+
+    <!--LLAMANDO LAS OJAS DE ESTILO-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap-flex.css">
+
+    
+    <!--Enlace externo para regular estilos por defecto en los navegadores (ej.los margenes)-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css ">
+    
+    <!--Integrar Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!--IMPORTAR EL SCROLL-->
+    <script src="js/smooth-scroll.min.js"></script>
+    
+    <!--esto tambien es del sitio en git hub muestra configuracion que hay que hacer dentro del scroll-->
+    <script> var scroll = new SmoothScroll('a[href*="#"]', {
+        // Selectors
+        ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+        header: null, // Selector for fixed headers (must be a valid CSS selector)
+    
+        // Speed & Easing
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        easing: 'easeInOutCubic', // Easing pattern to use
+        customEasing: function (time) {
+            // Function. Custom easing pattern
+            // If this is set to anything other than null, will override the easing option above
+    
+            // return <your formulate with time as a multiplier>
+    
+            // Example: easeInOut Quad
+            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+        },
+    
+        // Callback API
+        before: function (anchor, toggle) {}, // Callback to run before scroll
+        after: function (anchor, toggle) {} // Callback to run after scroll
+    });    </script>
+
+<!--HEAD TERMINA EL SCROLL-->
+
+<!--EMPIEZAN LOS ESTILOS DE LA SECCION 1-->
+    <style>
+        nav{ 
+            width: 100%; 
+            text-align:right;
+            }
+       
+        nav li{
+                display: inline-block;
+                }
+        nav li a{
+                color: #D59494;
+                text-decoration: none;
+                font-size: 22px;
+                font-family:'Roboto';
+                font-weight: normal;
+                display: block;
+                padding: 0px 8px;
+                transition: .3s;
+                }
+
+        nav li a:hover{
+                text-decoration: none;
+                color: #8F8686;}  
+
+            *   {
+                padding:0px;
+                margin:0px;}
+
+            body{
+                background:black;}
+
+            .bg-image {
+                width:100%;
+                height:680px;
+                display: block ;
+               
+                /* background: url('INICIO.jpg') no-repeat 50% 0; */
+                background: url('INICIO.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; }
+        
+            .container{
+                            width:100%;
+                            height:600px;
+                            line-height: 0 ;
+                            font-size: 0 ;
+                            position: relative;
+                            margin: 0 auto; }
+    
+            .header{
+                width: 100%;
+                padding: 40px;
+            }
+
+            .logo{
+                position: absolute;
+                padding-left: 30px;
+                top:20px;
+            }
+            
+            .Bienvenidostxt{
+                    color: #F9F9F9;
+                    font-family:Arciform Sans;
+                    font-weight: normal;
+                    font-size:120px ;
+                    padding-left: 350px;
+                    top:150px;
+                    position:absolute;
+                }
+                
+                .Bienvenidos2txt{
+                    color: #F9F9F9;
+                    font-family:Arciform Sans;
+                    font-size:50px ;
+                    padding-left: 594px;
+                    top: 310px;
+                    position:absolute;
+                }
+            
+            .btn_circle{
+                position: absolute;
+                /* padding-left: 10px; */
+                top:50%;                  
+                /*FALTA COLOCARLO A LA DERECHA Y EL ANCLA*/ 
+            }
+            
+    </style>
+
+
+
+
+
+
+    </head>
+
+    <body>
+
+
+<!--PARA LA BARRA DE NAVEGACION CON BOTONES DEL SCROLL-->
+
+<!-- MENÚ -->
+<div class="container-fluid navbar-fixed-top">
+        <div class="row flex-items-xs-between menu-1 flex-items-xs-middle">
+          <div class="col-xs-2">
+            <a data-scroll href="#sec-1" class="btn btn-danger" role="button" aria-pressed="true">Sección-1</a>
+          </div>
+          <div class="col-xs-2">
+            <a data-scroll href="#sec-2" class="btn btn-danger" role="button" aria-pressed="true">Sección-2</a>
+          </div>
+          <div class="col-xs-2">
+            <a data-scroll href="#sec-3" class="btn btn-danger" role="button" aria-pressed="true">Sección-3</a>
+          </div>
+          <div class="col-xs-2">
+            <a data-scroll href="#sec-4" class="btn btn-danger" role="button" aria-pressed="true">Sección-4</a>
+          </div>
+        </div>
+      </div>
+      <!-- FIN MENU -->
+    
+    
+       <!-- SECCIÓN 1 -->
+       <div class="container-fluid">
+        <div class="row flex-items-xs-center slider-1 flex-items-xs-middle" id="sec-1" >
+          <div class="row">
+            <div class="col-xs-12"><h1>Bienvenidos a mi sitio web</h1></div>
+            <div class="col-xs-12"><h3>Sección 1</h3></div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN SECCIÓN -->
+    
+      <!-- SECCIÓN 2 -->
+      <div class="container-fluid">
+        <div class="row flex-items-xs-center slider-2 flex-items-xs-middle" id="sec-2" >
+          <div class="row">
+            <div class="col-xs-12"><h1>Desarrollado con Bootstrap 4 beta</h1></div>
+            <div class="col-xs-12"><h3>Sección 2</h3></div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN SECCIÓN -->
+    
+      <!-- SECCIÓN 3 -->
+      <div class="container-fluid">
+        <div class="row flex-items-xs-center slider-3 flex-items-xs-middle" id="sec-3" >
+          <div class="row">
+            <div class="col-xs-12"><h1>Además de Flexbox</h1></div>
+            <div class="col-xs-12"><h3>Sección 3</h3></div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN SECCIÓN -->
+    
+      <!-- SECCIÓN 4 -->
+      <div class="container-fluid">
+        <div class="row flex-items-xs-center slider-4 flex-items-xs-middle" id="sec-4" >
+          <div class="row">
+            <div class="col-xs-12"><h1>Suscríbete en Youtube (bluuweb)</h1></div>
+            <div class="col-xs-12"><h3>Sección 4</h3></div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN SECCIÓN -->
+      
+      <!-- FOOTER -->
+      <div class="container-fluid footer">
+        <div><h6>Desarrollado por Ignacio Gutiérrez</a></h6></div>
+      </div>
+      <!-- FIN FOOTER -->
+
+
+
+
+
+ <!--logotipo que estara presente en todas las secciones, Pendiente* HACERLO ANCLA 
+            al igual que los botones -->
+            <div class="logo">
+                <img src="NUVITEC FIRMA.png" width="20%" height="30%" />
+            </div> 
+
+  
+           
+    <!-- TOGGLE!!!!!!  crear efecto de  ocultar-contenido-->
+   <!--        <section class="seccionToggle">          -->
+
+            <!--AQUI INICIA LA BARRA DE NAVEGCION DE LA PAGINA HOME-->
+                <div class="bg-image">
+                    <div class="container">
+                        <div class="header">      
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home |</a></li>
+                                    <li><a href="#">Servicios |</a></li>
+                                    <li><a href="#">Testimonios |</a></li>
+                                    <li><a href="#">Contacto |</a></li>
+                                    <li><a href="#">Aplicación</a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                    <h1 class="Bienvenidostxt">!Bienvenido!</h1>
+                    <h2 class="Bienvenidos2txt">a nuestra pagina web</h1>
+
+                    <div class="btn_circle"></div>    
+
+            </div>
+            <!--AQUI TERMINA LA BARRA DE NAVEGACION DE LA PAGINA HOME-->
+        
+    </section>
+
+    
+        <!--BOTON ABRIR * el id para JS y la clase para darle estilos-->
+             <!-- <a href="#" id="btn-toggle" class="btn-toggle" >¿Quienes somos?</a> -->
+        
+        <!--Contenido que irá dentro de la seccion toggle-->
+             <!-- <div class="main"> -->
+        
+                <!--Centrar contenido con la clase wrap-->
+                <!-- <div class="wrap"> -->
+                
+                            <!-- <article>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </article>
+                            <article>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                             </article>
+            </div>
+        </div> -->
+
+
+    <!--AGREGANDO BOOTSRAP!!!!!!!!!!!!!-->
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+        </body>
+</html>

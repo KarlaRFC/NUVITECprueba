@@ -1,0 +1,53 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+  /*fondo y color del texto en el toggle*/
+body {
+  background: #111111;
+  color: white;
+  font-family: "Roboto"; }
+ 
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+ 
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto; }
+ 
+.main {
+  width: 100%;
+  min-height: 1500px; }
+ 
+.seccionToggle {
+  /*display: none;    que aparezca de inicio o*/
+  height: calc(100vh - 50px);/*para que quede el espacio de la barra infeior*/
+  background: #fff;
+  color: #001F3F;
+  padding: 50px 0;
+  text-align: center; }
+ 
+.btn-toggle {
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  background: #FFDC00;
+  text-align: center; }
+  .btn-toggle:hover {
+    text-decoration: none; }
+ 
+@media screen and (max-width: 500px) {
+  .seccionToggle h2 {
+    margin-top: 0; } }
+@media screen and (max-height: 550px) {
+  .seccionToggle h2 {
+    font-size: 40px;
+    margin-top: 0; } }
